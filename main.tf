@@ -1,36 +1,27 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.105.0"
-    }
-  }
-}
-
-variable "azregion" {
+variable "location" {
   type = string
 }
 
-variable "azgroup" {
+variable "resource_group_name" {
   type = string
 }
 
-variable "azstorage" {
+variable "storage_account_name" {
   type = string
 }
 
-variable "azcontainer" {
+variable "container_name" {
   type = string
 }
 
-variable "azblob_name" {
+variable "blob_name" {
   type = string
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = "storageaccountname"
-  resource_group_name      = azurerm_resource_group.example.name
-  location                 = azurerm_resource_group.example.location
+  name                     = storage_account_name
+  resource_group_name      = resource_group_name
+  location                 = location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
