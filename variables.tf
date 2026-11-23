@@ -1,0 +1,5 @@
+resource_group_name  = "example-resources"
+location             = "example-location"
+storage_account_name = "examplestorageaccount"
+container_name       = "example-container"
+blob_name            = "exampleblob.txt"
