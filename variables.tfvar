@@ -1,0 +1,5 @@
+azregion = "West Europe"
+azgroup = "example-resources"
+azstorage = "examplestoracc"
+azcontainer = "examplecontainer"
+azblob_name = "exampleblob"
