@@ -1,5 +1,5 @@
 resource_group_name  = "example-resources"
-location             = "westeurope"
-storage_account_name = "examplestorageaccount123"
+location             = "East US"
+storage_account_name = "examplestoracc345435"
 container_name       = "example-container"
-blob_name           = "exampleblob.txt"
+blob_name            = "exampleblob.txt"
